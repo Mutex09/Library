@@ -1,0 +1,7 @@
+EB|"Dead"| description
+B|"Alive"| "d"
+"asdr"
+"asd"
+"fas"
+EB|"Кто тут есть"| ""
+B|"Кто тут есть"| ""
