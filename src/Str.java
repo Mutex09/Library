@@ -22,7 +22,7 @@ public class Str
 
         System.out.println(messageB);
         //Change/add description
-        String searchWord = "sas";
+        String searchWord = "sasss";
         String changeWord = "This book is about adventure";
 
         StringBuilder sb = new StringBuilder();
