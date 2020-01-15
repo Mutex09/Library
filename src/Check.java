@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 public class Check
 {
-    public static boolean checkRights(String login)
+    public boolean checkRights(String login)
     {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("INF\\user_inf.properties")))) {
             String strLine;
@@ -21,23 +21,28 @@ public class Check
         return false;
     }
 
-    public static boolean checkLogin(String login)
+    public boolean checkLogin(String login)
     {
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("INF\\user_inf.properties")))) {
-            String strLine;
-            while ((strLine = br.readLine()) != null) {
-                if(strLine.matches("(.)*="+login+"=(.)*")) {
-                    return false;
-                }
-            }
-        }catch (IOException e)
-        {
-            System.out.println(e.getMessage());
+        if (login.equals("")) {
+            return false;
         }
-        return true;
+        else {
+
+            try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("INF\\user_inf.properties")))) {
+                String strLine;
+                while ((strLine = br.readLine()) != null) {
+                    if (strLine.matches("(.)*=" + login + "=(.)*")) {
+                        return false;
+                    }
+                }
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+            return true;
+        }
     }
 
-    public static boolean checkEmail(String email)
+    public boolean checkEmail(String email)
     {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("INF\\user_inf.properties")))) {
             String strLine;

@@ -1,7 +1,9 @@
 EB|"Dead"| description
-B|"Alive"| "d"
+B|"Alive"| "Undead"
 "asdr"
 "asd"
 "fas"
 EB|"Кто тут есть"| ""
 B|"Кто тут есть"| ""
+B|"Marginal"| "Good story"
+EB|"Groove"| "Hard"
