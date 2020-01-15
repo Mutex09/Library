@@ -17,8 +17,7 @@ public class Test
     }
 
     public void MainWindow() throws IOException {
-        System.out.println("Please enter your status.");
-        System.out.println("0----User\n1----Admin");
+        System.out.println("0----Log In\n1----Sign Up");
 
         command.append(in.nextLine());
 
