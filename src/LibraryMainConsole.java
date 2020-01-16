@@ -4,11 +4,6 @@ import java.io.IOException;
 
 public class LibraryMainConsole implements Application
 {
-
-    private BufferedReader messageFile = new BufferedReader(new FileReader("src\\Books.txt"));
-    private String message = "";
-    private StringBuilder messageB = new StringBuilder();
-    private int page = 1;
     protected Admin admin = new Admin();
     protected User user = new User();
     protected Check check = new Check();
@@ -117,10 +112,5 @@ public class LibraryMainConsole implements Application
                 exit();
                 break;
         }
-    }
-
-    public static void main(String[] args) throws IOException {
-        LibraryMainConsole myLib = new LibraryMainConsole();
-        myLib.start();
     }
 }

@@ -26,7 +26,8 @@ public abstract class AbstractAlert
             message.setFrom(new InternetAddress("Myemail"));
             message.addRecipient(Message.RecipientType.TO,new InternetAddress(email));
             message.setSubject("Новое описание книги");
-            message.setText("Эй, у нас тут появилось новое описание этой книги: " + book + "\nЗаходи проверь, возможно захочешь себе такую.");
+            message.setText("Эй, у нас тут появилось новое описание этой книги: " + book + "\nЗаходи проверь, возможно захочешь себе такую.\n" +
+                    "©2019-Library java");
             Transport tr = mailSession.getTransport();
             tr.connect(null,"pxufgjzyzkjrszrh");
             tr.sendMessage(message,message.getAllRecipients());
@@ -53,7 +54,8 @@ public abstract class AbstractAlert
             message.setFrom(new InternetAddress("Myemail"));
             message.addRecipient(Message.RecipientType.TO,new InternetAddress(email));
             message.setSubject("Новая книга");
-            message.setText("Слушай, у нас тут появилась новая книга: " + book + "\nЗаходи проверь, возможно захочешь себе такую.");
+            message.setText("Слушай, у нас тут появилась новая книга: " + book + "\nЗаходи проверь, возможно захочешь себе такую.\n" +
+                    "©2019-Library java");
             Transport tr = mailSession.getTransport();
             tr.connect(null,"pxufgjzyzkjrszrh");
             tr.sendMessage(message,message.getAllRecipients());
