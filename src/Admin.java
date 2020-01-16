@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+
 public class Admin extends AdminInterface implements Account
 {
     Admin() throws IOException{}

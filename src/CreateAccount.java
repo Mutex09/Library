@@ -1,10 +1,10 @@
 import java.io.*;
 
-public class CreateAccount extends Md5Hex
+public class CreateAccount extends SHA256
 {
     public boolean createAccount(String login, String password, String email)
     {
-        String pswdHex = md5Hex(password);
+        String pswdHex = sha(password);
 
         StringBuilder sb = new StringBuilder();
 

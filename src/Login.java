@@ -3,14 +3,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Login extends Md5Hex
+public class Login extends SHA256
 {
     private static int marker = 0;
 
 
     public static boolean login(String login, String password)
     {
-        String pswdHex = md5Hex(password);
+        String pswdHex = sha(password);
         search(login,pswdHex);
         return marker == 1;
     }

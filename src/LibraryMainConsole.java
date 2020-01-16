@@ -93,7 +93,7 @@ public class LibraryMainConsole implements Application
         if (signIn.createAccount(login.toString(),password.toString(),email.toString()))
             System.out.println("Account was created");
 
-        logIn();
+        start();
     }
 
     public void exit() {
