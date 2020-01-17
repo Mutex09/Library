@@ -103,12 +103,4 @@ public class Admin extends AdminInterface implements Account
                 break;
         }
     }
-
-
-
-    public static void main(String[] args) {
-
-
-
-    }
 }
